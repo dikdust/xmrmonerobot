@@ -1,18 +1,18 @@
-# CryptoTrackerBot - check cryptocurrencies prices on telegram
-# Copyright (C) 2018  Dario 91DarioDev <dariomsn@hotmail.it> <github.com/91dariodev>
+# xmrmonerobot - check cryptocurrencies prices on telegram
+# Copyright (C) 2020  dikdust <dikdust@gmail.com> <github.com/dikdust>
 #
-# CryptoTrackerBot is free software: you can redistribute it and/or modify
+# xmrmonerobot is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published
 # by the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 #
-# CryptoTrackerBot is distributed in the hope that it will be useful,
+# xmrmonerobot is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU Affero General Public License for more details.
 #
 # You should have received a copy of the GNU Affero General Public License
-# along with CryptoTrackerBot.  If not, see <http://www.gnu.org/licenses/>.
+# along with xmrmonerobot.  If not, see <http://www.gnu.org/licenses/>.
 
 
 from telegram.ext.dispatcher import run_async
@@ -27,7 +27,7 @@ from PIL import Image
 
 from matplotlib import ticker
 import matplotlib.dates as mdates
-from matplotlib.finance import candlestick_ohlc
+from mplfinance.original_flavor import candlestick_ohlc
 
 from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
